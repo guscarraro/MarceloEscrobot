@@ -9,9 +9,43 @@ export const DivInicial = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  header {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-size: small;
+
+    h5 {
+      display: flex;
+      background-image: url("../../src/assets/p2.png");
+      opacity: 0.7;
+      width: 20%;
+      height: 100px;
+      background-size: 100% 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    nav {
+      display: flex;
+      width: 100%;
+      p {
+        display: flex;
+        background-image: url("../../src/assets/p.png");
+        opacity: 0.7;
+        width: 20%;
+        height: 100px;
+        background-size: 100% 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
   div {
     margin: 0;
-    margin-top: 1%;
+    margin-top: 10%;
     padding: 0;
     display: flex;
     align-items: center;
@@ -40,23 +74,22 @@ export const DivInicial = styled.section`
 `;
 
 export const StyledSection2 = styled.section`
+  width: 100%;
   margin: 0;
   padding: 0;
   .game-board {
     margin-top: 10px;
     width: 100%;
     height: 500px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
     overflow: hidden;
   }
   .pipe {
     position: absolute;
     bottom: 0;
-    /* top: 250px; */
-
     width: 80px;
-    animation: pipe-animations 4s infinite linear;
+    animation: pipe-animations 3s infinite linear;
   }
   .mario {
     width: 150px;
@@ -64,7 +97,7 @@ export const StyledSection2 = styled.section`
     bottom: 0;
   }
   .jump {
-    animation: jump 2s infinite ease-out;
+    animation: jump 4s infinite ease-out;
   }
 
   @keyframes jump {

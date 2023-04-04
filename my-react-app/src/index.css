@@ -2,6 +2,17 @@
 
 * {
   font-family: "Press Start 2P", cursive;
+  box-sizing: border-box;
+}
+:root {
+  /* COLORS */
+  --blue: #3cc2ef;
+  --red: #ed6077;
+  --grey: #666b80;
+  --black: #402f44;
+  --transp-black: rgba(0, 0, 0, 0.1);
+  /*  Stroke  */
+  --stroke: 4px solid #402f44;
 }
 
 body {
