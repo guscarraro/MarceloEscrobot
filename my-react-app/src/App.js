@@ -37,6 +37,27 @@ export const DivInicial = styled.section`
     background: rgba(255, 255, 255, 0.4);
     color: black;
   }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    color: black;
+    justify-content: flex-end;
+    font-size: 10px;
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    img {
+      width: 15px;
+      height: 15px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
 
   p.animate {
     color: white;
@@ -62,11 +83,34 @@ export const DivInicial = styled.section`
     }
   }
 `;
+export const SectionSkill = styled.section`
+  background-color: black;
+  width: 100%;
+  height: 60vh;
+
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+  .text1 {
+    position: absolute;
+    font-size: 60px;
+    top: 92vh;
+    left: 41%;
+    opacity: 0.4;
+  }
+  .text2 {
+    position: absolute;
+    top: 100vh;
+    left: 40%;
+    font-size: 40px;
+  }
+`;
 
 export const StyledSection2 = styled.section`
   background-image: linear-gradient(
       to top,
-
+      rgba(255, 255, 255, 255),
       rgba(255, 0, 0, 0),
       rgba(0, 0, 0, 255)
     ),
@@ -80,6 +124,7 @@ export const StyledSection2 = styled.section`
   padding: 0;
   color: white;
   background-color: black;
+  padding-bottom: 5%;
 
   .divProjetos {
     display: flex;
@@ -89,13 +134,13 @@ export const StyledSection2 = styled.section`
   .name1 {
     position: absolute;
     font-size: 60px;
-    top: 92vh;
-    left: 40%;
+    top: 142vh;
+    left: 41%;
     opacity: 0.4;
   }
   .name2 {
     position: absolute;
-    top: 100vh;
+    top: 150vh;
     left: 40%;
     font-size: 40px;
   }
@@ -119,10 +164,10 @@ export const StyledSection2 = styled.section`
         position: relative;
         width: 350px;
         height: 350px;
-        margin: 10px;
+        /* margin: 10px; */
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
         list-style: none;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         background: rgba(255, 255, 255, 0.1);
         overflow: hidden;
         display: flex;
@@ -187,10 +232,10 @@ export const StyledSection2 = styled.section`
         position: relative;
         width: 350px;
         height: 350px;
-        margin: 10px;
+        /* margin: 10px; */
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
         list-style: none;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         background: rgba(255, 255, 255, 0.1);
         overflow: hidden;
         display: flex;
@@ -254,10 +299,10 @@ export const StyledSection2 = styled.section`
         position: relative;
         width: 350px;
         height: 350px;
-        margin: 10px;
+        /* margin: 10px; */
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
         list-style: none;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         background: rgba(255, 255, 255, 0.1);
         overflow: hidden;
         display: flex;
@@ -321,10 +366,10 @@ export const StyledSection2 = styled.section`
         position: relative;
         width: 350px;
         height: 350px;
-        margin: 10px;
+        /* margin: 10px; */
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
         list-style: none;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         background: rgba(255, 255, 255, 0.1);
         overflow: hidden;
         display: flex;

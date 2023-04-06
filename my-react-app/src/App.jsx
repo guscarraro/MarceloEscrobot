@@ -3,7 +3,12 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.js";
 import VanillaTilt from "vanilla-tilt";
-import { DivInicial, StyledSection2, DivApresentacao } from "./App.js";
+import {
+  DivInicial,
+  StyledSection2,
+  DivApresentacao,
+  SectionSkill,
+} from "./App.js";
 import { ModalCugaRender } from "./components/modal/modalCUGA";
 import { ModalCwbRender } from "./components/modal/modalCWB";
 import { ModalTGARender } from "./components/modal/modalTGA";
@@ -55,6 +60,12 @@ function App() {
             </p>
           </div>
         </DivApresentacao>
+        <SectionSkill>
+          <div>
+            <h4 className="text1">Skills e Experiencia</h4>
+            <p className="text2">Skills e Experiencia</p>
+          </div>
+        </SectionSkill>
 
         <div className="background2"></div>
         <StyledSection2>
@@ -135,6 +146,17 @@ function App() {
             </div>
           </div>
         </StyledSection2>
+        <footer>
+          <div>
+            <p>Dev:</p>
+            <div>
+              <img src="../src/assets/android-chrome-192x192.png" alt="" />
+              <a href="https://www.linkedin.com/in/gustavo-carraro-192554161/">
+                Gustavo Carraro
+              </a>
+            </div>
+          </div>
+        </footer>
       </DivInicial>
     </div>
   );
