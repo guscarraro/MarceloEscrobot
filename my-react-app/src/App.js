@@ -1,34 +1,51 @@
 import styled from "styled-components";
-import witcherBack from "../src/assets/gamer.gif";
-
 export const DivInicial = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background1 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0),
+        rgba(0, 0, 0, 255)
+      ),
+      url("../../src/assets/editadoGIF2.gif");
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+  }
   header {
     position: fixed;
-    height: 40px;
-    color: white;
-    opacity: 0.6;
+    height: 100%;
+    /* color: white; */
+    /* opacity: 0.6; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 70px;
     font-size: small;
+    right: 95%;
+    bottom: 20;
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
   }
-  div {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
+
   p.animate {
+    color: white;
     font-size: 1.2rem;
+    font-weight: 700;
     display: inline-block;
     border-right: 9px solid white;
     padding-right: 3px;
-    max-width: 0;
+    max-width: 100px;
     white-space: nowrap;
     overflow: hidden;
     animation: pisca normal infinite 0.8s, escrever normal 5s steps(55) both;
@@ -47,10 +64,17 @@ export const DivInicial = styled.section`
 `;
 
 export const StyledSection2 = styled.section`
+  background-image: linear-gradient(
+      to top,
+
+      rgba(255, 0, 0, 0),
+      rgba(0, 0, 0, 255)
+    ),
+    url("../../src/assets/editadoGIF (1).gif");
+
   display: flex;
-  background-color: black;
   width: 100%;
-  height: 80vh;
+  height: auto;
   background-size: 100% 100%;
   margin: 0;
   padding: 0;
@@ -66,116 +90,334 @@ export const StyledSection2 = styled.section`
     position: absolute;
     font-size: 60px;
     top: 92vh;
-    left: 50%;
-    opacity: 0.1;
+    left: 40%;
+    opacity: 0.4;
   }
   .name2 {
     position: absolute;
     top: 100vh;
-    left: 50%;
+    left: 40%;
     font-size: 40px;
   }
   .divUlcards {
     margin-top: 10%;
   }
 
-  overflow: scroll;
-  ul {
-    width: 100%;
+  .containerCardList {
+    margin-left: 5%;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    li {
-      border: solid 2px white;
-      position: relative;
-      width: 700px;
-      list-style: none;
-      margin: 0px;
-      padding: 50px;
-      display: flex;
-      flex-direction: row;
-      -webkit-box-align: center;
-      align-items: center;
-      justify-content: center;
-      align-content: space-around;
-      div {
-        display: flex;
-        flex-direction: column;
-        -webkit-box-align: center;
-        align-items: center;
-        justify-content: center;
-      }
-      img {
-        width: 100px;
-        height: 100px;
-        background-size: 100% 100%;
-      }
-    }
-  }
-  .game-board {
-    margin-top: 10px;
-    width: 100%;
-    height: 500px;
-    /* border: 1px solid black; */
     position: relative;
-    overflow: hidden;
-  }
-  .pipe {
-    position: absolute;
-    bottom: 0;
-    width: 80px;
-    animation: pipe-animations 3s infinite linear;
-  }
-  .mario {
-    width: 150px;
-    position: absolute;
-    bottom: 0;
-  }
-  .jump {
-    animation: jump 4s infinite ease-out;
-  }
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+     {
+      .CYGA {
+      }
+      .CYGA {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+        list-style: none;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        background-image: linear-gradient(
+            to top,
 
-  @keyframes jump {
-    0% {
-      bottom: 0;
-    }
-    40% {
-      bottom: 180px;
-    }
-    50% {
-      bottom: 180px;
-    }
-    60% {
-      bottom: 180px;
-    }
-    100% {
-      bottom: 0;
-    }
-  }
-  @keyframes pipe-animations {
-    from {
-      right: -80px;
-    }
-    to {
-      right: 100%;
+            rgba(255, 0, 0, 0),
+            rgba(0, 0, 0, 255)
+          ),
+          url("../../src/assets/CanUGet AwayP1.png");
+        width: 280;
+        height: 280;
+        background-size: 100% 100%;
+        .content {
+          padding: 20px;
+          text-align: center;
+          transform: translateY(150px);
+          opacity: 0;
+          transition: 0.5s;
+          h2 {
+            position: absolute;
+            top: -80px;
+            right: 30px;
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.2);
+          }
+          h3 {
+            font-size: 1.8rem;
+            color: white;
+            z-index: 1;
+          }
+          p {
+            font-size: 0.8rem;
+            color: white;
+            font-weight: 300;
+          }
+          a {
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            margin-top: 10px;
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            box-shadow: 0 5px 15px (0, 0, 0, 0.2);
+          }
+        }
+      }
+      .card:hover {
+        .content {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      .CWB {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+        list-style: none;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        background-image: linear-gradient(
+            to top,
+
+            rgba(255, 0, 0, 0),
+            rgba(0, 0, 0, 255)
+          ),
+          url("../../src/assets/CWBattle1.png");
+
+        background-size: 100% 100%;
+        .content {
+          padding: 20px;
+          text-align: center;
+          transform: translateY(150px);
+          opacity: 0;
+          transition: 0.5s;
+          h2 {
+            position: absolute;
+            top: -80px;
+            right: 30px;
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.2);
+          }
+          h3 {
+            font-size: 1.8rem;
+            color: white;
+            z-index: 1;
+          }
+          p {
+            font-size: 0.8rem;
+            color: white;
+            font-weight: 300;
+          }
+          a {
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            margin-top: 10px;
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            box-shadow: 0 5px 15px (0, 0, 0, 0.2);
+          }
+        }
+      }
+      .card:hover {
+        .content {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      .TGA {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+        list-style: none;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        background-image: linear-gradient(
+            to top,
+
+            rgba(255, 0, 0, 0),
+            rgba(0, 0, 0, 255)
+          ),
+          url("../../src/assets/Thibrucella2.png");
+
+        background-size: 100% 100%;
+        .content {
+          padding: 20px;
+          text-align: center;
+          transform: translateY(150px);
+          opacity: 0;
+          transition: 0.5s;
+          h2 {
+            position: absolute;
+            top: -80px;
+            right: 30px;
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.2);
+          }
+          h3 {
+            font-size: 1.8rem;
+            color: white;
+            z-index: 1;
+          }
+          p {
+            font-size: 0.8rem;
+            color: white;
+            font-weight: 300;
+          }
+          a {
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            margin-top: 10px;
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            box-shadow: 0 5px 15px (0, 0, 0, 0.2);
+          }
+        }
+      }
+      .card:hover {
+        .content {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      .CB {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+        list-style: none;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        background-image: linear-gradient(
+            to top,
+
+            rgba(255, 0, 0, 0),
+            rgba(0, 0, 0, 255)
+          ),
+          url("../../src/assets/Cyberpunk1.png");
+        width: 280;
+        height: 280;
+        background-size: 100% 100%;
+        .content {
+          padding: 20px;
+          text-align: center;
+          transform: translateY(150px);
+          opacity: 0;
+          transition: 0.5s;
+          h2 {
+            position: absolute;
+            top: -80px;
+            right: 30px;
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.2);
+          }
+          h3 {
+            font-size: 1.8rem;
+            color: white;
+            z-index: 1;
+          }
+          p {
+            font-size: 0.8rem;
+            color: white;
+            font-weight: 300;
+          }
+          a {
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            margin-top: 10px;
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            box-shadow: 0 5px 15px (0, 0, 0, 0.2);
+          }
+        }
+      }
+      .card:hover {
+        .content {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
     }
   }
 `;
 
 export const DivApresentacao = styled.div`
-  background-image: url("../../src/assets/fundo.jpg");
   width: 100%;
-  height: 100vh;
-  background-size: 100% 100%;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: white;
 
+  /* div {
+    max-width: 300px;
+  } */
+
   .animate.pequena {
+    width: 100%;
     font-size: small;
   }
+  h4 {
+    font-size: 20px;
+  }
   .animate.grande {
-    margin-top: 15%;
     font-size: 40px;
   }
   p {
