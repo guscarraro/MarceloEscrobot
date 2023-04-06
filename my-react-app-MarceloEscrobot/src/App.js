@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import imgfundo1 from "./assets/editadoGIF.gif";
 import imgfundo2 from "./assets/editadoGIF2.gif";
+import imgCWB from "./assets/CWBattle1.png";
+import imgTGA from "./assets/Thibrucella2.png";
+import imgCB from "./assets/Cyberpunk1.png";
+import imgCUGA from "./assets/CanUGetAwayP1.png";
+
 export const DivInicial = styled.section`
   display: flex;
   flex-direction: column;
@@ -184,7 +189,7 @@ export const StyledSection2 = styled.section`
             rgba(255, 0, 0, 0),
             rgba(0, 0, 0, 255)
           ),
-          url("../../src/assets/CanUGet AwayP1.png");
+          url(${imgCUGA});
         width: 280;
         height: 280;
         background-size: 100% 100%;
@@ -252,7 +257,7 @@ export const StyledSection2 = styled.section`
             rgba(255, 0, 0, 0),
             rgba(0, 0, 0, 255)
           ),
-          url("../../src/assets/CWBattle1.png");
+          url(${imgCWB});
 
         background-size: 100% 100%;
         .content {
@@ -319,7 +324,7 @@ export const StyledSection2 = styled.section`
             rgba(255, 0, 0, 0),
             rgba(0, 0, 0, 255)
           ),
-          url("../../src/assets/Thibrucella2.png");
+          url(${imgTGA});
 
         background-size: 100% 100%;
         .content {
@@ -386,7 +391,7 @@ export const StyledSection2 = styled.section`
             rgba(255, 0, 0, 0),
             rgba(0, 0, 0, 255)
           ),
-          url("../../src/assets/Cyberpunk1.png");
+          url(${imgCB});
         width: 280;
         height: 280;
         background-size: 100% 100%;

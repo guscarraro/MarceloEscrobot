@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { useState } from "react";
 import { StyledModalCards } from "./style";
-import imgCUG from "../../../assets/CanUGet AwayP1.png";
+import imgCUG from "../../../assets/CanUGetAwayP1.png";
 
 export const ModalCugaRender = ({ closeModalCuga }) => {
   return (
